@@ -24,18 +24,11 @@
  const ListItem = mongoose.model("listitem", itemSchema);
 
  const alarm = new ListItem({
-   name: "Wake at 6.30."
+   name: "Wake up at 6.30."
  });
 
- const study = new ListItem({
-   name: "Study for an hour and a half."
- })
 
- const breakfast = new ListItem({
-   name: "4 eggs and cheese on dark bread."
- });
-
- const defaultList = [alarm, study, breakfast];
+ const defaultList = [alarm];
 
  const listSchema = {
    name: String,
